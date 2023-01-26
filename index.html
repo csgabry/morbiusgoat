@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>Morbius G.O.A.T.</title>
+<link rel="stylesheet" href="style.css">
+<!-- webfont -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<!-- webfont -->
+
+</head>
+
+<body>
+
+ 
+ <div class="container"> <!-- inizio container -->
+
+   <nav> <!-- inizio navigazione -->
+
+      <img class="logo" src="img/logo.png" alt="logo-morbius-goat">
+    <ul>
+      <li><a class="link-nav"href="#">Home</a></li>
+      <li><a class="link-nav"href="#">Regolamento</a></li>
+      <li><a class="link-nav"href="#">Gruppo Whatsapp</a></li>
+      <li><a class="tasto-accedi"href="#">Accedi</a></li>
+    </ul>
+  
+
+   </nav> <!-- fine navigazione -->
+
+
+
+<div class="flex-benvenuto"> <!-- inizio benvenuto -->
+   <div class="benvenuto"> 
+   <h1>Benvenuto<br>nel clan<br>Morbius G.O.A.T.</h1>
+   <h2 class="sotto-headline">Accedi con il tuo nickname e leggi il regolamento per accedere<br>alle promozioni </h2>
+   <div class="flex-tasti-benvenuto">
+      <a class="tasto-accedi-benvenuto"href="#">Accedi</a>
+      <a class="tasto-regolamento-benvenuto"href="#">Regolamento</a>
+   </div>
+   </div>
+
+
+<div>
+   <img class="drago-elettrico" src="img/drago-elettrico.webp" alt="drago-elettrico">
+</div>
+</div>  <!-- fine benvenuto -->
+
+
+
+<div class="leggi-regolamento"> <!-- inizio leggi il regolamento -->
+   <div>
+   <h1 class="head-leggi-regolamento">Leggi il regolamento</h1>
+      <h2 class="sotto-head-leggi-regolamento">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h2>
+      <div class="flex-tasti-benvenuto">
+         <a class="tasto-accedi-leggi-regolamento"href="#">Accedi</a>
+         <a class="tasto-regolamento-leggi-regolamento"href="#">Clicca per leggerlo ></a>
+      </div>
+   </div>
+   <div>
+      <img class="stregone" src="img/stregone.webp" alt="stregone">
+   </div>
+</div> <!-- fine leggi il regolamento -->
+
+
+
+<div class="lo-stemma">  <!-- inizio cos'è lo stemma -->
+
+<div class="text-lo-stemma">  
+<h1 class="head-lo-stemma">Cos'è lo stemma?</h1>
+<p class="p-lo-stemma">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+</div> 
+
+<img class="stemma-gif" src="img/stemma.gif" alt="tutorial-stemma">
+</div> 
+ <!-- fine cos'è lo stemma -->
+
+
+
+<div class="proposte"> <!-- inizio proposte -->
+   <div class="align-proposte">
+   <h1 class="head-leggi-regolamento">Stiamo lavorando a<br>nuove funzionalità</h1>
+   <!-- form -->
+   <form class="form-funzionalità" action="https://sheetdb.io/api/v1/6sppv03jktpwz" method="POST" id="sheetdb-form">
+    <input class="compila-form-funzionalità" name="data[idee-utenti]" placeholder="Proponi nuove idee">
+      <button class="tasto-invia-form-funzionalità" type="submit">Invia</button>
+   </form>
+
+   <!--java form -->
+<script>
+   var form = document.getElementById('sheetdb-form');
+   form.addEventListener("submit", e => {
+     e.preventDefault();
+     fetch(form.action, {
+         method : "POST",
+         body: new FormData(document.getElementById("sheetdb-form")),
+     }).then(
+         response => response.json()
+     ).then((html) => {
+       // you can put any JS code here
+       alert('success')
+     });
+   });
+ </script>
+ <!--java form -->
+
+  
+
+   <!-- form -->
+      </div>
+   <div>
+      <img class="barbaro" src="img/barbaro.webp" alt="stregone">
+   </div>
+</div> <!-- fine proposte -->
+
+<div class="flex-footer"> <!-- inizia footer -->
+   <div class="grid-sx-footer">
+      <h3 class="h3-footer">Link utili</h3>
+      <a class="a-sx-footer" href="#">Home</a>
+      <a class="a-sx-footer" href="#">Regolamento</a>
+      <a class="a-sx-footer" href="#">Gruppo Whatsapp</a>
+   </div>
+
+ <div> <!-- form -->
+   <form class="form-footer" action="https://sheetdb.io/api/v1/6sppv03jktpwz" method="POST" id="sheetdb-form2">
+      <h3 class="h3-footer-form">Accedi</h3>
+      <input type="time" class="orario-form-footer" name="data[orario]" placeholder="00:00">
+      <input class="compila-form-footer" name="data[nickname]" placeholder="Nickname in gioco">
+      <button class="tasto-invia-form-footer" type="submit">Invia</button>
+   </form>
+
+   <!--java form -->
+<script>
+   var form = document.getElementById('sheetdb-form2');
+   form.addEventListener("submit", e => {
+     e.preventDefault();
+     fetch(form.action, {
+         method : "POST",
+         body: new FormData(document.getElementById("sheetdb-form2")),
+     }).then(
+         response => response.json()
+     ).then((html) => {
+       // you can put any JS code here
+       alert('success')
+     });
+   });
+ </script>
+ <!--java form -->
+ </div> <!-- form -->
+
+   <div class="grid-sx-footer">
+      <h3 class="h3-footer">Entra nel gruppo<br>Whatsapp</h3>
+      <a href="#"><img class="icona-whatsapp" src="img/whatsapp.webp" alt="icona-whatsapp"></a>
+   </div>
+
+   
+
+
+   
+</div> <!-- fine footer -->
+
+
+
+
+</div> <!-- fine container -->
+</body>
+</html>  
