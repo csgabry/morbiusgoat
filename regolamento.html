@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>Morbius G.O.A.T.</title>
+<link rel="stylesheet" href="style-regolamento.css">
+<!-- webfont -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<!-- webfont -->
+
+</head>
+
+<body>
+
+ 
+ <div class="container"> <!-- inizio container -->
+
+   <nav> <!-- inizio navigazione -->
+
+      <img class="logo" src="img/logo.png" alt="logo-morbius-goat">
+    <ul>
+      <li><a class="link-nav"href="index.html">Home</a></li>
+      <li><a class="link-nav"href="#">Regolamento</a></li>
+      <li><a class="link-nav"href="#">Gruppo Whatsapp</a></li>
+      <li><a class="tasto-accedi"href="#">Il tuo nickname</a></li>
+    </ul>
+  
+
+   </nav> <!-- fine navigazione -->
+
+
+
+<div class="flex-benvenuto"> <!-- inizio benvenuto -->
+   <div class="benvenuto"> 
+   <h1 style="color:#1E1E1E;" >Leggi bene<br>il <b style="color:#3B9331;">regolamento!</b></h1>
+   <p class="sotto-headline">Il nostro clan non è una dittatura, ma ci permettiamo di espellere <br>o retrocedere i giocatori in caso di ripetute trasgressioni <br>per salvaguardare l'esperienza altrui.</p>
+   <div class="flex-tasti-benvenuto">
+      <a class="tasto-accedi-benvenuto"href="#">Accedi</a>
+   </div>
+   </div>
+
+
+<div>
+   <img class="drago-elettrico" src="img/baby-dragon.webp" alt="drago-elettrico">
+</div>
+</div>  <!-- fine benvenuto -->
+
+<div class="generali">  <!-- inizio generali -->
+
+   <div class="text-generali">  
+   <h1 class="head-generali">Cos'è lo stemma?</h1>
+
+   <div class="grid-p-generali"> <!-- inizio grid -->
+
+   <div class="div-generali">
+      <img class="icone-regolamento" src="img/icona1-regolamento.webp" alt="">
+   <p class="p-generali"> Non esistono giocatori di serie A e di serie B, <b style="font-weight: 600;">qui si rispettano tutti,</b> indipendentemente dal livello, dalla bravura e grado.</p>
+   </div>
+
+   <div class="div-generali">
+      <img class="icone-regolamento" src="img/icona2-regolamento.webp" alt="">
+      <p class="p-generali"> Non conteggiamo le truppe donate o ricevute, ma <b style="font-weight: 600;">è buona norma donare</b> e aiutare gli altri a crescere.</p>
+      </div>
+
+   </div> 
+   <div class="grid-p-generali-sotto">
+      <div class="div-generali">
+         <img class="icone-regolamento" src="img/icona3-regolamento.webp" alt="">
+         <p class="p-generali"> Non accettiamo gente che entra e si parcheggia, <b style="font-weight: 600;">bisogna essere attivi</b> (salvo avvisi). </p>
+         </div>
+
+         <div class="div-generali">
+            <img class="icone-regolamento" src="img/icona4-regolamento.webp" alt="">
+            <p class="p-generali"> <b style="font-weight: 600;">Se non si vuole partecipare alle War è obbligatorio mettere</b> <a href="#" style="font-weight: 600; text-decoration: none; color: red">lo scudo rosso</a> (Il mio proflo/guerre tra clan/anche no) e compensare con le donazioni.</p>
+            </div>
+</div>
+   <!-- fine grid -->
+   
+   </div> 
+
+   </div> 
+    <!-- fine generali -->
+
+<div class="guerra"> <!-- inizio guerra -->
+
+   <h1 class="head-guerra">Regole di guerra</h1>
+
+   <div class="flex-guerra"> <!-- flex-->
+
+   <div> <!-- p-->
+
+   <div class="div-guerra">
+      <p class="p-guerra"><b>La disposizione deve essere idonea.</b><br>Il layout del tuo villaggio non deve essere troll e deve essere il più possibile inespugnabile. Ricorda di richiedere truppe per riempire il castello e difendere meglio il villaggio.</p>
+   </div>
+
+   <div class="div-guerra-sotto">
+      <p class="p-guerra"><b>Attacca prima il tuo corrispettivo.</b><br>Il tuo primo attacco deve essere usato sul tuo avversario adiacente. Quindi, se nella mappa della War sei nella posizione n.3, dovrai attaccare l'avversario n.3.</p>
+   </div>
+
+   <div class="div-guerra-sotto">
+      <p class="p-guerra"><b>Aspetta per usare il secondo attacco.</b><br>Il secondo attacco potrà essere usato solo nelle 16 ore rimanenti alla fine della War e dovrai attaccare obiettivi non troppo distanti dal tuo livello.</p>
+   </div>
+
+</div> <!-- p-->
+
+<img class="drago-guerra" src="img/drago.webp" alt="drago-clashofclans">
+
+</div> <!-- flex-->
+ 
+</div> <!-- fine guerra -->
+
+
+<div class="proposte"> <!-- inizio orario -->
+   <div class="align-proposte">
+   <h1 class="head-orario">A quale orario preferisci<br>attaccare in War?</h1>
+
+   <div> <!-- form -->
+      <form class="form-footer" action="https://sheetdb.io/api/v1/6sppv03jktpwz" method="POST" id="sheetdb-form2">
+         <h3 class="h3-footer-form">Accedi</h3>
+         <input type="time" class="orario-form-footer" name="data[orario]" placeholder="00:00">
+         <input class="compila-form-footer" name="data[nickname]" placeholder="Nickname in gioco">
+         <button class="tasto-invia-form-footer" type="submit">Invia</button>
+      </form>
+   
+      <!--java form -->
+   <script>
+      var form = document.getElementById('sheetdb-form2');
+      form.addEventListener("submit", e => {
+        e.preventDefault();
+        fetch(form.action, {
+            method : "POST",
+            body: new FormData(document.getElementById("sheetdb-form2")),
+        }).then(
+            response => response.json()
+        ).then((html) => {
+          // you can put any JS code here
+          alert('success')
+        });
+      });
+    </script>
+    <!--java form -->
+    </div> <!-- form -->
+
+  
+
+   <!-- form -->
+      </div>
+   
+</div> <!-- fine orario -->
+
+
+
+
+
+
+
+
+</div> <!-- fine container -->
+</body>
+</html>  
