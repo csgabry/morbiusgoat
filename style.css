@@ -1,0 +1,1168 @@
+  /*inizio reset*/
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*fine reset*/
+
+body{
+  
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}           
+
+.container{  
+    width: 85%;
+    margin: 0px auto;
+}
+
+h1{
+  font-weight: 600;
+}
+
+h2,p,h3{
+  font-weight:400;
+}
+
+
+.logo{  /*inizio navigazione*/
+width: 40px;
+}
+
+ul{
+  font-size: 18px;
+  display: flex;
+  gap: 50px;
+
+
+}
+
+.link-nav{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+nav{
+  background-color: #3F86DB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px;
+  
+  position: fixed;
+  width: 85%;
+
+}
+
+.nav-container{
+  
+  width: 85%;
+  height: auto; 
+  
+  margin: 0px auto;
+}
+
+.sfondo-nav{
+  width: 100%;
+  height: 100px;
+  background-color: #3F86DB;
+
+  position: fixed;
+  width: 100%;
+}
+
+.whatsapp-nav{
+  display: none;
+}
+
+.tasto-accedi{ /*fine navigazione*/
+  padding: 15px 30px;
+  background-color: #f5f5f5;
+  color: #1E1E1E;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+ 
+.topnav{ /*NAVIGAZIONE MOBILE*/
+  display: none;
+}
+
+
+
+
+.benvenuto{ /*inizio benvenuto*/
+  background: rgb(63,134,219);
+  background: linear-gradient(180deg, rgba(63,134,219,1) 0%, rgba(44,168,235,1) 100%); 
+  height: 100vh;
+}
+
+.grid-benvenuto{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+}
+
+.h1-benvenuto{
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.h2-benvenuto{
+  color: #BEE8FF;
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+}
+
+.div-h2-benvenuto{
+  width: 80%;
+}
+
+.tasto-nickname-benvenuto{
+  display: inline-block;
+  background-color: white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #1E1E1E;
+  padding: 18px 30px;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.tasto-nickname-benvenuto:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.tasto-regolamento-benvenuto{
+  display: inline-block;
+  border: 3px solid white;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 100px;
+  margin-left: 30px;
+  transition: all 0.3s;
+}
+
+.tasto-regolamento-benvenuto:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.drago-elettrico{
+  width: 70%;
+}
+
+.colonna-dx-benvenuto{
+  display: grid;
+  place-items: center end;
+}
+
+.div-drago-elettrico-mobile{
+  display: none;
+}
+
+.h1-benvenuto-mobile{
+  display: none;
+}
+
+.drago-elettrico-mobile{ /*fine benvenuto*/
+  display: none;
+}
+
+
+
+
+.h2-nickname{ /*inizio nickname*/
+  color: #1E1E1E;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.p-nickname{
+  color: #878787;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+
+.baby-elettrodragon{
+  width: 250px;
+}
+
+.grid-nickname{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: auto;
+  align-items: center ;
+  padding: 100px 0;
+}
+
+.colonna-dx-nickname{
+  display: grid;
+  place-items: center end;
+}
+
+.none-desk{
+  display: none;
+}
+
+.form-nickname{ 
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  gap: 20px 0;
+
+}
+
+.compila-form-nickname{
+  color: #878787;
+  background-color: #ECECEC;
+  border-radius: 60px;
+  width: 300px;
+  height: 58px;
+  padding-left: 40px;
+  font-size: 20px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 10px;
+}
+
+.orario-form-nickname{
+  color: #878787;
+  background-color: #ECECEC;
+  border-radius: 60px;
+  width: 145px;
+  height: 58px;
+  padding-left: 40px;
+  font-size: 20px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 50px;
+}
+
+.tasto-invia-form-nickname{
+  background-color: #3E7CFA;
+  color: white;
+  width: 146%;
+  height: 58px;
+  border-radius: 60px;
+  font-size: 20px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.tasto-invia-form-nickname:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.colonna-sx-nickname{ /*fine nickname*/
+ padding-top: px;
+}
+
+
+
+
+.stemma{ /*inizio stemma*/
+  background: rgb(63,134,219);
+  background: linear-gradient(180deg, rgba(63,134,219,1) 0%, rgba(44,168,235,1) 100%); 
+  height: auto;
+  display: grid;
+  align-items: end;
+  padding-top: 100px;
+}
+
+.h2-stemma{
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.p-stemma{
+  color: #BEE8FF;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  line-height: 1.45;
+}
+
+.div-p-stemma{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.div-gif{ /*fine stemma*/
+  margin: 0px auto;
+  width: 36%;
+  margin-bottom: -0.4rem;
+}
+
+
+
+
+.h2-regolamento{ /*inizio regolamento*/
+  color: #1E1E1E;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.p-regolamento{
+  color: #878787;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+
+.tasto-nickname-regolamento{
+  display: inline-block;
+  background-color: #3F86DB;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  padding: 18px 30px;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.tasto-nickname-regolamento:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.tasto-regolamento-regolamento{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #3F86DB;
+  text-decoration: none;
+  margin-left: 40px;
+  transition: all 0.3s;
+}
+
+.tasto-regolamento-regolamento:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.stregone{
+  width: 500px;
+}
+
+.grid-regolamento{
+  display: grid;
+  grid-template-columns: 55% 45%;
+
+}
+
+.regolamento{
+  height: auto;
+  padding: 100px 0;
+}
+
+.colonna-dx-regolamento{
+  display: grid;
+  place-items: center end;
+}
+
+.none-desk{  /*fine regolamento*/
+  display: none;
+}
+
+
+
+
+.novità{ /*inizio novità*/
+  padding: 100px 0;
+  background: rgb(63,134,219);
+  background: linear-gradient(180deg, rgba(63,134,219,1) 0%, rgba(44,168,235,1) 100%); 
+}
+
+.h2-novità{
+  color: #1E1E1E;
+  font-size: 4rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.grid-novità{ 
+  width: 100%;
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+  
+  padding: 0 200px;
+}
+
+.icona-novità{
+  width: 40%;
+  margin: 0 auto 30px auto;
+}
+
+.h3-novità{
+  font-size: 1.3rem;
+  color: #BEE8FF;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.p-novità{
+  font-size: 0.9rem;
+  color: #BEE8FF;
+  text-align: center;
+}
+
+.colonna-novità{ /*fine novità*/
+  width: 290px;
+  display: grid;
+  align-items: center;
+}
+
+
+
+
+.h2-proposte{ /*inizio proposte*/
+  color: #1E1E1E;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.stregone{
+  width: 500px;
+}
+
+.grid-proposte{
+  display: grid;
+  grid-template-columns: 75% 25%;
+  height: auto;
+  padding: 100px 0 0 0;
+}
+
+.proposte{
+  display: grid;
+  place-items: end end;
+  height: 512px;
+  width: auto
+}
+
+.colonna-dx-proposte{
+  display: grid;
+  place-items: end end;
+}
+
+.barbaro-mobile{
+  display: none;
+}
+
+.compila-form-proposte{
+  color: #878787;
+  background-color: #ECECEC;
+  border-radius: 60px;
+  width: 60%;
+  height: 58px;
+  padding-left: 40px;
+  font-size: 1.3rem;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tasto-invia-form-proposte{
+  background-color: #3E7CFA;
+  color: white;
+  width: 126px;
+  height: 58px;
+  border: none;
+  border-radius: 60px;
+  font-size: 1.3rem;
+  margin-left: 50px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.tasto-invia-form-proposte:hover{
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.form-proposte{  /*fine proposte*/
+  margin-top: 30px;
+  
+}
+
+
+
+
+footer{ /*inizio footer*/
+  background-color: #1E1E1E;
+  width: 100%;
+  height: auto;
+  padding: 100px 0 50px 0;
+}
+
+.flex-footer{
+  display: flex;
+  gap: 90px;
+  margin-bottom: 100px;
+}
+
+.a-sx-footer{
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+
+.a-sx-footer:hover{
+  color: #C1C1C1;
+}
+
+.a-cx-footer{
+  border: 3px solid white;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.h3-footer-sx{
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #C1C1C1;
+  margin-bottom: 20px;
+}
+
+.h3-footer-dx{
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #C1C1C1;
+  margin-bottom: 40px;
+  text-align: right;
+}
+
+.h3-footer-cx{
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #C1C1C1;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.grid-cx-footer{
+  display: grid;
+  align-items: center;
+  width: 100%;
+}
+
+.grid-sx-footer{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-dx-footer{
+  width: 100%;
+}
+
+.icona-whatsapp{ 
+  width: 50px;
+}
+
+.align-whatsapp{
+  text-align: right;
+  display: grid;
+  align-items: center;
+}
+
+.p-footer{ /*inizio footer*/
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 1024px){
+
+ .sfondo-nav{ /*inizio nav*/
+    height: 180px
+  }
+
+  .none-nav{
+    display: none;
+  }
+
+  ul{
+    font-size: 1.6rem;
+    gap: 30px;
+  }
+  
+  .link-nav{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+
+  .whatsapp-nav{
+    display: unset;
+    width: 60px;
+  }
+
+  .logo{
+    width: 60px;
+    margin-right: -60px;
+  }
+
+  nav{
+    padding: 60px 0;
+  }
+
+  .tasto-accedi{ /*fine navigazione*/
+    padding: 18px 60px;
+    background-color: #f5f5f5;
+    color: #1E1E1E;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+
+
+
+  .div-drago-elettrico-mobile{ /*inizio benvenuto*/
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+  }
+
+  .drago-elettrico-mobile{
+    margin-bottom: 100px;
+    display: inline;
+    width: 70%;
+  }
+
+  .drago-elettrico{
+    display: none;
+  }
+
+  .grid-benvenuto{
+    grid-template-columns: 100%;
+    height: auto;
+    padding: 100px 0 200px 0;
+  }
+
+  .benvenuto{
+    height: auto;
+  }
+
+  .container{
+    width: 80%;
+  }
+
+  .h1-benvenuto{
+    display: none;
+  }
+
+  .h1-benvenuto-mobile{
+    display:block;
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+    margin: -60px 0 30px 0;
+  }
+
+  .b-h1-benvenuto-mobile{
+    font-size: 6rem;
+  }
+
+  .h2-benvenuto{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .div-h2-benvenuto{
+    width: 85%;
+  }
+
+  .colonna-sx-benvenuto{
+    display: grid;
+    place-items: center;
+  }
+
+  .tasto-nickname-benvenuto{
+    background-color: white;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: #1E1E1E;
+    padding: 30px 215px;
+    border-radius: 100px;
+    margin-bottom: 40px;
+  }
+  
+  .tasto-regolamento-benvenuto{ /*fine benvenuto*/
+    text-align: center;
+    border: 4px solid white;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: white;
+    padding: 26px 228px;
+    border-radius: 100px;
+    margin-left: 0;
+  }
+
+
+
+
+  .h2-nickname{ /*inizio nickname*/
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .p-nickname{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .baby-elettrodragon{
+    width: 60%;
+    margin-top: 150px;
+  }
+  
+  .grid-nickname{
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+    padding: 100px 0;
+    align-items: center ;
+  }
+  
+  .colonna-dx-nickname{
+    display: grid;
+    place-items: center;
+  }
+  
+  .form-nickname{ 
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    gap: 40px 0;
+  
+  }
+
+  :first-child {
+    grid-column: 1 / 2;
+  }
+  
+  .compila-form-nickname{
+    color: #878787;
+    background-color: #ECECEC;
+    border-radius: 60px;
+    width: 100%;
+    height: 110px;
+    padding: 0 40px;
+    font-size: 2.2rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 0px;
+    text-align: center;
+  }
+  
+  .orario-form-nickname{
+    color: #878787;
+    background-color: #ECECEC;
+    border-radius: 60px;
+    width: 100%;
+    height: 110px;
+    padding: 0 40px;
+    font-size: 2.2rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 0px;
+    text-align: center;
+  }
+  
+  .tasto-invia-form-nickname{ /*fine nickname*/
+    background-color: #3E7CFA;
+    color: white;
+    width: 100%;
+    height: 110px;
+    border-radius: 60px;
+    font-size: 2.2rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+
+
+  
+
+
+  .stemma{ /*inizio stemma*/
+    padding-top: 100px;
+    height: auto;
+  }
+  
+  .h2-stemma{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .p-stemma{
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 80px;
+    line-height: 1.6;
+  }
+  
+  .div-p-stemma{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .div-gif{ /*fine stemma*/
+    margin: 0px auto -0.4rem auto;
+    width: 100%;
+  }
+  
+
+
+
+  .h2-regolamento{ /*inizio regolamento*/
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+
+  }
+  
+  .p-regolamento{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .none-desk{
+    display: inline;
+  }
+
+  .tasto-regolamento-regolamento2{
+    background-color: #3F86DB;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: white;
+    padding: 30px 215px;
+    border-radius: 100px;
+    margin-bottom: 40px;
+  }
+
+  .tasto-nickname-regolamento2{
+    border:4px solid  #3F86DB;
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: #3F86DB;
+    padding: 26px 198px;
+    border-radius: 100px;
+    margin-bottom: 40px;
+  }
+
+  .div-tasti-regolamento{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center ;
+    text-align: center;
+    margin-right: 35px;
+  }
+
+  .stregone{
+    width: 90%;
+    margin-top: 80px;
+  }
+  
+  .grid-regolamento{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  
+  .regolamento{
+    height: auto;
+    padding: 100px 0;
+  }
+  
+  .colonna-dx-regolamento{
+    display: grid;
+    place-items: center;
+  }
+  
+  .colonna-sx-regolamento{ /*fine regolamento*/
+   display: grid;
+   place-items: center;
+   width: 100%;
+  }
+
+
+  
+
+  .novità{ /*inizio novità*/
+    padding: 100px 0;
+    background: rgb(63,134,219);
+    background: linear-gradient(180deg, rgba(63,134,219,1) 0%, rgba(44,168,235,1) 100%); 
+  }
+  
+  .h2-novità{
+    font-size: 3.5rem;
+    margin-bottom: 100px;
+ }
+  
+  .grid-novità{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 100px;
+    padding: none;
+  }
+  
+  .icona-novità{
+    width: 40%;
+    margin: 0 auto 30px auto;
+  }
+  
+  .h3-novità{
+    font-size: 2.3rem;
+    color: #BEE8FF;
+    text-align: center;
+    margin-bottom: 7px;
+  }
+  
+  .p-novità{
+    font-size: 1.5rem;
+    color: #BEE8FF;
+    text-align: center;
+  }
+  
+  .colonna-novità{ /*fine novità*/
+    width: 400px;
+    display: grid;
+    align-items: center;
+  }
+
+
+
+
+  .h2-proposte{ /*inizio proposte*/
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .grid-proposte{
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+  }
+  
+  .proposte{
+    height: auto;
+  }
+  
+  .colonna-dx-proposte{
+    display: grid;
+    place-items: center;
+  }
+
+  .compila-form-proposte{
+    color: #878787;
+    background-color: #ECECEC;
+    border-radius: 60px;
+    width: 100%;
+    height: 110px;
+    padding-left: 40px;
+    font-size: 2.2rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .tasto-invia-form-proposte{
+    background-color: #3E7CFA;
+    color: white;
+    width: 100%;
+    height: 110px;
+    border: none;
+    border-radius: 60px;
+    font-size: 2.2rem;
+    margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+    font-weight: 600;
+    margin: 40px 0 0 0;
+  }
+  
+  .tasto-invia-form-proposte:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+  }
+  
+  .form-proposte{
+    display: grid;
+    margin-top: 30px;
+  }
+
+  .barbaro{
+    display: none;
+  }
+
+  .barbaro-mobile{
+    display: inline;
+    width: 70%;
+    margin-top: 150px;
+
+  }
+  
+  .colonna-sx-proposte{ /*fine proposte*/
+   display: grid;
+   place-items: center;
+  }
+
+
+
+
+  footer{ /*inizio footer*/
+    background-color: #1E1E1E;
+    width: 100%;
+  }
+  
+  .flex-footer{
+    display: grid;
+    gap: 90px;
+    align-items: center;
+  }
+  
+  .a-sx-footer{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .a-sx-footer:hover{
+    color: #C1C1C1;
+  }
+  
+  .a-cx-footer{
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: white;
+    padding: 26px;
+  }
+  
+  .h3-footer-sx{
+    text-align: center;
+    font-size: 2.1rem;
+  }
+  
+  .h3-footer-dx{
+    text-align: center;
+    font-size: 2.1rem;
+    margin-bottom: 65px;
+  }
+  
+  .h3-footer-cx{
+    font-size: 2.1rem;
+  }
+  
+  .grid-cx-footer{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+
+  }
+  
+  .grid-sx-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-dx-footer{
+    width: 100%;
+      margin-bottom: 50px
+  }
+  
+  .icona-whatsapp{ 
+    width: 100px;
+  }
+  
+  .align-whatsapp{
+
+    text-align: center;
+    display: grid;
+    align-items: center;
+  }
+  
+  .p-footer{ /*inizio footer*/
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+
+
+
+
+
+
+
+}
